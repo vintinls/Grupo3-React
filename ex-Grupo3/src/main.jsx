@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import CadastroUsuarios from './Components/AxiosUsuarios';
+import BuscarPessoa from './Components/ListarUsuario';
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <CadastroUsuarios/>
+    <BuscarPessoa/>
   </React.StrictMode>
 );
