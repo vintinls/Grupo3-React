@@ -1,1 +1,8 @@
 # Grupo3-React
+
+<br><br>GUILHERME
+<br><br>LEONARDO GUERARTI
+<br><br>LUCAS GABRIEL
+<br><br>LUCAS MONTEIRO
+<br><br>RAFAELA COSTA
+<br><br>VICTOR HUGO LISBOA
