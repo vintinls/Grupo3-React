@@ -1,10 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
+import AxiosUsuarios from "./Components/AxiosUsuarios.jsx"
+import ListagemUsuario from './Components/ListagemUsuario.jsx'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <ListagemUsuario/>
   </React.StrictMode>,
 )

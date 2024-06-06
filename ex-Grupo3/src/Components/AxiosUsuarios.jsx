@@ -2,8 +2,10 @@ import { useState } from "react";
 import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function ExemploAxiosPost() {
+function AxiosUsuarios() {
   const [nome, setNome] = useState("");
+  const [cpf, setCpf] = useState("");
+  const [email, setEmail] = useState("");
   const [createPost, setCreatePost] = useState(null);
   const [enviado, setEnviado] = useState(false);
 
@@ -11,6 +13,8 @@ function ExemploAxiosPost() {
     e.preventDefault();
     const newPost = {
       nome: nome,
+      cpf: cpf,
+      email: email,
     };
 
     axios
@@ -45,6 +49,24 @@ function ExemploAxiosPost() {
                 onChange={(e) => setNome(e.target.value)}
                 required
               />
+              <label htmlFor="cpf">CPF:</label>
+              <input
+                type="text"
+                className="my-3 form-control"
+                id="cpf"
+                value={cpf}
+                onChange={(e) => setCpf(e.target.value)}
+                required
+              />
+              <label htmlFor="email">E-mail:</label>
+              <input
+                type="text"
+                className="my-3 form-control"
+                id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
             </div>
           </div>
           <button className="btn btn-primary" type="submit">Enviar</button>
@@ -54,4 +76,4 @@ function ExemploAxiosPost() {
   );
 }
 
-export default ExemploAxiosPost;
+export default AxiosUsuarios;
