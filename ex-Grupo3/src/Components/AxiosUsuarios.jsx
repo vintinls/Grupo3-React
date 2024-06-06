@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function AxiosUsuarios() {
+function CadastroUsuarios() {
   const [nome, setNome] = useState("");
   const [cpf, setCpf] = useState("");
   const [email, setEmail] = useState("");
@@ -31,7 +31,7 @@ function AxiosUsuarios() {
 
   return (
     <div className="container">
-      <h1>Cadastro de Aluno</h1>
+      <h1>Cadastro de Usuarios</h1>
       {enviado ? (
         <div className="alert alert-primary" role="alert">
           Enviado com sucesso
@@ -76,4 +76,4 @@ function AxiosUsuarios() {
   );
 }
 
-export default AxiosUsuarios;
+export default CadastroUsuarios;
